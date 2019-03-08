@@ -4,7 +4,9 @@
   "description": "Experts REST backend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "test": "node test"
   },
   "keywords": [
     "experts",
@@ -13,5 +15,16 @@
     "rest"
   ],
   "author": "Marcio Alves Ramos",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.18.10",
+    "supertest": "^3.4.2",
+    "tape": "^4.10.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "winston": "^3.2.1"
+  }
 }
